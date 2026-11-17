@@ -1,4 +1,15 @@
-# credit-card-fraud-detection
+# Credit card fraud detection
+
+This notebook project compares classifiers on highly imbalanced transaction data. Start with [Model_Final.ipynb](Model_Final.ipynb), which uses a stratified holdout, applies SMOTE inside each cross-validation training fold, and reports classification metrics and ROC AUC. [The second notebook](Credit%20Card%20Fraud%20Detection.ipynb) is an exploratory SVM example.
+
+## Run the final notebook
+
+1. Download `creditcard.csv` from the [dataset page](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it in the repository root.
+2. Install packages in a Python virtual environment with `python -m pip install jupyterlab pandas numpy matplotlib seaborn scikit-learn imbalanced-learn mlxtend`.
+3. Start JupyterLab in the repository root with `python -m jupyterlab` and run `Model_Final.ipynb` in order. Full grid searches can be compute-intensive.
+
+## Dataset background and attribution
+
 About Dataset
 Context
 It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
